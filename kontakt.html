@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<meta name="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<title>Zodiac Water</title>
+<link rel="stylesheet" href="zodiackontakt.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="wrapper">
+	<!-- Main nav bar area -->
+	<nav class="topnav">
+		<a href="index.html"><img src="logo.png" id="logo" alt="Logo" class="responsive"></a>
+		<ul id="myLinks">
+			<a href="index.html">Forside</a>
+			<a href="produkter.html">Produkter</a>
+			<a href="voreskoncept.html">Vores Koncept</a>
+			<a href="kontakt.html">Kontakt</a>
+		</ul>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    	<i class="fa fa-bars"></i>
+  		</a>
+		<script>
+			function myFunction() {
+  			var x = document.getElementById("myLinks");
+  			if (x.style.display === "block") {
+    		x.style.display = "none";
+  			} else {
+    		x.style.display = "block";
+  				}
+			}
+		</script>
+		</nav>		
+	<!-- Main content area -->
+<main class="content">		
+	<article> 
+		<h1> KONTAKT </h1>
+		<p> Har du brug for hjælp, så står Zodiac Waters kundehjælp altid klar til at hjælpe dig.</p>
+	</article>	
+		
+	<article>
+		<form action="action_page.php">
+
+    		<label for="fname">Fornavn:</label>
+    		<input type="text" id="fname" name="Fornavn" placeholder="Dit fornavn..">
+
+    		<label for="lname">Efternavn:</label>
+   			<input type="text" id="lname" name="Efternavn" placeholder="Dit efternavn..">
+			
+			<label for="lname">Email:</label>
+   			<input type="text" id="lname" name="Email" placeholder="Din email..">
+
+    </select>
+
+    <textarea id="subject" name="subject" placeholder="Hvad har du på hjertet?" style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+    </form>
+    </article>
+</main>
+		
+<footer class="main-footer">
+	<article><h2>Om Os</h2>
+	<p>Hos Zodiac Water arbejder vi for et bedre kendskab til stjernetegnenes betydning, og arbejder samtidig udfra en CO2 neutral filosofi i forhold til vores produktion og distribution.</p>
+	</article>
+	<article><h2>Kontakt</h2>
+		<p>Tlf.: +45 12 34 56 78</p>
+		<p>E-mail: info@zodiacwater.dk</p>
+	</article>
+	<article><h2>Sociale Medier</h2>
+			<p class="col-md-6 col-sm-6">
+                    <ul class="social-icon">
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>			
+                    </ul>
+            </p>
+	</article>
+</footer>
+</div>
+</body>
+</html>

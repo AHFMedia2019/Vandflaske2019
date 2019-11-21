@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+}
+.wrapper {
+	max-width: 100%;
+	margin: 0 0;
+}
+.wrapper > * {
+	border-radius: 0px;
+}
+/* Vi navngiver områder udfra grid-area property. */
+.topnav {
+  	grid-area: nav;	
+  	overflow: hidden;
+  	background-color: #ffffff;
+  	position: relative;
+  	width: 100%;
+}
+.content {
+	grid-area: content;
+	text-align: center;
+}
+.main-footer {
+	grid-area: footer;
+	text-align: center;
+	background-color: #F4D1D7;
+	color: #ffffff;
+}
+.topnav #myLinks {
+  display: none;
+}
+.topnav a {
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.topnav a.icon {
+  background:#ffffff;
+  display: block;
+  position: absolute;
+  right: 2%;
+  top: 25px;
+}
+.topnav a:hover {
+  background-color: #ffffff;
+  color: black;
+}
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+#logo {
+	float: center;
+	margin: 0% 30%;
+	max-width: 30%;
+	max-height: 140px;
+}
+
+Der skal også ændres lidt under jeres indhold, da klassificeringen af elementerne er blevet ændret.
+
+
+/* mobile first */
+.wrapper {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas:
+		"nav     nav"
+		"content content"
+		"footer  footer";
+}
+@media (min-width: 500px) {
+	.wrapper {
+		grid-template-columns: 1fr 3fr;
+		grid-template-areas:
+			"nav     nav"
+			"content content"
+			"footer  footer";
+	}
+	nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+@media (min-width: 700px) {
+	.wrapper {
+		grid-template-columns: 1fr 4fr 1fr;
+		grid-template-areas:
+			"nav     nav     nav"
+			"content content content"
+			"footer  footer  footer";			
+	}
+	nav ul {
+		flex-drection: column;
+	}
+}
+
+/*---------------------------------------
+   Social icon             
+-----------------------------------------*/
+
+.social-icon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.social-icon li {
+    display: inline-block;
+    list-style: none;
+}
+
+.social-icon li a {
+    color: #777;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    margin: 22px 12px 10px 12px;
+}
+
+.social-icon li a:hover {
+    color: #000;
+    transform: scale(1.1);
+}
+
+.responsive {
+	width: 100%;
+	height: auto;
+}
