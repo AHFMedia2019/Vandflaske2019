@@ -13,8 +13,8 @@
 <body>
 <div class="wrapper">
 	<!-- Main nav bar area -->
-	<nav class="topnav">
-		<a href="index.html"><img src="logo.png" id="logo" alt="Logo" class="responsive"></a>
+	<nav class="topnav" id="Firstnav">
+		<a href="index.html"><img src="logo_desktop.png" id="logo" alt="Logo" class="responsive"></a>
 		<ul id="myLinks">
 			<li><a href="index.html">Forside</a></li>
 			<li><a href="produkter.html">Produkter</a></li>
@@ -26,18 +26,19 @@
   			</a>
 		<script>
 			function myFunction() {
-  			var x = document.getElementById("myLinks");
-  			if (x.style.display === "block") {
-    		x.style.display = "none";
+  			var x = document.getElementById("myTopnav");
+  			if (x.className === "topnav") {
+    		x.className += " responsive";
   			} else {
-    		x.style.display = "block";
-  				}
-			}
-		</script>
+    		x.className = "topnav";
+  }
+}
+</script>
+
 	</nav>
 	<!-- Main content area -->
 	<section class="content">
-		<img src="../forside vandflaske.jpg" alt="Stjernetegnsvandflaske" class="responsive">
+		<img src="forside_vandflaske.jpg" alt="Stjernetegnsvandflaske" class="responsive">
 		<article id="velkommen" class="maincon">
 			<h3>Velkommen til Zodiac Water</h3>
 			<p>Vi ønsker at tage dig med på en rejse mod større forståelse for stjernetegn, og hvad de kan bidrage med i forhold til dit liv og din dagligdag.</p>
