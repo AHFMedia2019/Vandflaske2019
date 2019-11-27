@@ -63,6 +63,10 @@ body {
   	margin: 5%;
 	float: center;
 }
+.responsive {
+  width: 100%;
+  height: auto;
+}
 h3 {
 	text-align: center;
 	font-size: 2em;
@@ -76,7 +80,7 @@ h3 {
 	  margin-top: 5%;
 	  margin-right: 3%;
   }
-.topnav a.responsive {
+.topnav a.logo {
 		width: 100%;
 		text-align: center;
 	}
