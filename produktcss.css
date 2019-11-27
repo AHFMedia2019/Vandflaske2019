@@ -1,14 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 
-
-nav {
-	baground-color: #F4D1D7
-}
-
 body {
 	width: 100%;
 	font-family: 'Roboto', sans-serif;
+	}
+
+
 }
 .responsive {
   width: 100%;
@@ -17,6 +15,9 @@ body {
 .wrapper {
 	max-width: 100%;
 	margin: 0 0;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	}
 }
 .wrapper > * {
 	border-radius: 0px;
@@ -28,6 +29,7 @@ body {
   	background-color: #ffffff;
   	position: relative;
   	width: 100%;
+	grid-column: 1 / 2;
 }
 .content {
 	grid-area: content;
@@ -73,6 +75,7 @@ body {
 
 .intro {
 	max-width: 90%;
+	grid-column: 1 / 4; 
 }
 
 {box-sizing: border-box;}
@@ -97,13 +100,15 @@ body {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+  grid-column:
 }
 .listing li {
   border: 1px solid #000000;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-	align-content: center;
+	align-content: center; 
+
 }
 .listing .cta {
   margin-top: auto;
@@ -157,6 +162,29 @@ body {
 		"content content"
 		"footer  footer";
 }
-
-
+@media (min-width: 500px) {
+	.wrapper {
+		grid-template-columns: 1fr 3fr;
+		grid-template-areas:
+			"nav     nav"
+			"content content"
+			"footer  footer";
+	}
+	nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+@media (min-width: 700px) {
+	.wrapper {
+		grid-template-columns: 1fr 4fr 1fr;
+		grid-template-areas:
+			"nav     nav     nav"
+			"content content content"
+			"footer  footer  footer";			
+	}
+	nav ul {
+		flex-drection: column;
+	}
+}
 
